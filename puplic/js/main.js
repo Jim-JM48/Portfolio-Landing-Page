@@ -1,5 +1,6 @@
 
 let toggleBtn = document.querySelector("nav .toggle-btn");
+let section = document.querySelector("section");
 let links = document.querySelector("nav .links");
 let filter = document.querySelector(".portofolio .filter")
 let send = document.querySelector(".send")
@@ -11,6 +12,7 @@ const toggleFun = () => {
         toggleBtn.classList.toggle("cross");
     })
 }
+
 
 //active link function
 const activeFun = (selector ,tagname) => {

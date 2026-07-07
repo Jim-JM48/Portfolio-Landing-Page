@@ -8,7 +8,7 @@
 
 :root {
     --container-padding : 0 90px;
-    --button-padding : 13px 30px;
+    --button-padding : 12px 26px;
     --primary-color : #FD6F00;
     --secondary-background : #1E1E1E;
     --card-color : #242424;
@@ -130,7 +130,7 @@ header nav button:last-child {
 @media screen and (max-width : 790px) {
     header nav {
         .logo {
-            transform: translateX(43px)
+            transform: translateX(33px)
         }
         .links {
             width: 100%;
@@ -221,24 +221,7 @@ section .left h1 {
     --wepkit-background-clip: text;
     background-clip: text;
 }
-section .left .clickable {
-    padding: 15px 0;
-}
-section .left .clickable button {
-    padding: var(--button-padding);
-    border-radius: 4px;
-    border: 0;
-}
-section .left .clickable button:first-child {
-    color: #ffffff;
-    background-image: var(--linear-secondary-color);
-}
-section .left .clickable button:last-child {
-    margin-left: 24px;
-    background-color: transparent;
-    border: 1px solid var(--text-primary-color);
-    color: var(--text-primary-color);
-}
+
 section .left .box-sec {
     font-size: 14px;
     display: flex;
@@ -273,6 +256,25 @@ section .left .box-sec h3 {
     text-align: center;
 }
 
+section .left .clickable {
+    padding: 15px 0;
+}
+section .left .clickable button {
+    padding: var(--button-padding);
+    border-radius: 4px;
+    border: 0;
+}
+section .left .clickable button:first-child {
+    color: #ffffff;
+    background-image: var(--linear-secondary-color);
+}
+section .left .clickable button:last-child {
+    margin-left: 24px;
+    background-color: transparent;
+    border: 1px solid var(--text-primary-color);
+    color: var(--text-primary-color);
+}
+
 section .right {
     float: right;
     padding-top: 20px;
@@ -293,10 +295,11 @@ section .right .elipse {
 @media screen and (max-width : 915px) {
     section {
         height: auto;
-        padding-top: 100px;
+        padding-top: 50px;
         .left {
             float: none;
             display: flex;
+            order: 2;
             flex-direction: column;
             align-items: center;
             h1 {
@@ -317,9 +320,11 @@ section .right .elipse {
     }
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 770px) {
+    section {
+        padding-top: 140px;
+    }
     section .left{
-        padding-top: 70px;
         .box-sec {
             width: 100%;
         }
